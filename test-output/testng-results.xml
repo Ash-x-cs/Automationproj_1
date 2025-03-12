@@ -1,78 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-20T15:41:32 IST" name="Suite" finished-at="2024-10-20T15:41:50 IST" duration-ms="17726">
+  <suite started-at="2025-03-11T15:39:55 IST" name="Default suite" finished-at="2025-03-11T15:39:55 IST" duration-ms="63">
     <groups>
+      <group name="Master">
+        <method signature="TC_001_AccountRegistrationtTest.test_account_Registration()[pri:0, instance:testCases.TC_001_AccountRegistrationtTest@6fb365ed]" name="test_account_Registration" class="testCases.TC_001_AccountRegistrationtTest"/>
+      </group> <!-- Master -->
+      <group name="Regression">
+        <method signature="TC_001_AccountRegistrationtTest.test_account_Registration()[pri:0, instance:testCases.TC_001_AccountRegistrationtTest@6fb365ed]" name="test_account_Registration" class="testCases.TC_001_AccountRegistrationtTest"/>
+      </group> <!-- Regression -->
     </groups>
-    <test started-at="2024-10-20T15:41:32 IST" name="Test" finished-at="2024-10-20T15:41:50 IST" duration-ms="17726">
-      <class name="testCases.TC_001_AccountRegistrationTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_001_AccountRegistrationTest@63787180]" started-at="2024-10-20T15:41:32 IST" name="setup" finished-at="2024-10-20T15:41:35 IST" duration-ms="2835" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Windows]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verify_account_registration()[pri:0, instance:testCases.TC_001_AccountRegistrationTest@63787180]" started-at="2024-10-20T15:41:35 IST" name="verify_account_registration" finished-at="2024-10-20T15:41:36 IST" duration-ms="1474" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_account_registration -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_001_AccountRegistrationTest@63787180]" started-at="2024-10-20T15:41:36 IST" name="tearDown" finished-at="2024-10-20T15:41:36 IST" duration-ms="73" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC_001_AccountRegistrationTest -->
-      <class name="testCases.TC_002_LoginTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_002_LoginTest@39655d3e]" started-at="2024-10-20T15:41:36 IST" name="setup" finished-at="2024-10-20T15:41:39 IST" duration-ms="2514" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Windows]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verify_login()[pri:0, instance:testCases.TC_002_LoginTest@39655d3e]" started-at="2024-10-20T15:41:39 IST" name="verify_login" finished-at="2024-10-20T15:41:50 IST" duration-ms="10723" status="FAIL">
-          <exception class="java.lang.AssertionError">
+    <test started-at="2025-03-11T15:39:55 IST" name="Default test" finished-at="2025-03-11T15:39:55 IST" duration-ms="63">
+      <class name="testCases.TC_001_AccountRegistrationtTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_001_AccountRegistrationtTest@6fb365ed]" started-at="2025-03-11T15:39:55 IST" name="setup" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1741687795327" status="FAIL">
+          <exception class="org.testng.TestNGException">
             <message>
-              <![CDATA[Login failed expected [true] but found [false]]]>
+              <![CDATA[
+Parameter 'os' is required by BeforeClass on method setup but has not been marked @Optional or defined
+in C:\Users\PC\AppData\Local\Temp\testng-eclipse--1603727493\testng-customsuite.xml]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Login failed expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:1067)
-at org.testng.Assert.assertEquals(Assert.java:1031)
-at testCases.TC_002_LoginTest.verify_login(TC_002_LoginTest.java:41)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'os' is required by BeforeClass on method setup but has not been marked @Optional or defined
+in C:\Users\PC\AppData\Local\Temp\testng-eclipse--1603727493\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:264)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 at org.testng.TestRunner.privateRun(TestRunner.java:739)
 at org.testng.TestRunner.run(TestRunner.java:614)
@@ -91,15 +49,55 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verify_login -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_002_LoginTest@39655d3e]" started-at="2024-10-20T15:41:50 IST" name="tearDown" finished-at="2024-10-20T15:41:50 IST" duration-ms="79" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="test_account_Registration()[pri:0, instance:testCases.TC_001_AccountRegistrationtTest@6fb365ed]" started-at="2025-03-11T15:39:55 IST" name="test_account_Registration" finished-at="2025-03-11T15:39:55 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'os' is required by BeforeClass on method setup but has not been marked @Optional or defined
+in C:\Users\PC\AppData\Local\Temp\testng-eclipse--1603727493\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'os' is required by BeforeClass on method setup but has not been marked @Optional or defined
+in C:\Users\PC\AppData\Local\Temp\testng-eclipse--1603727493\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:264)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_account_Registration -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_001_AccountRegistrationtTest@6fb365ed]" started-at="2025-03-11T15:39:55 IST" name="tearDown" finished-at="2025-03-11T15:39:55 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC_002_LoginTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- testCases.TC_001_AccountRegistrationtTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
